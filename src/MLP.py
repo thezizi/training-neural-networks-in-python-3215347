@@ -31,7 +31,41 @@ neuron.set_weights([10,10,-15]) #AND
 
 # Challenge: Write your OR weights
 
-print("Gate:")
+print("Gate AND:")
+print ("0 0 = {0:.10f}".format(neuron.run([0,0])))
+print ("0 1 = {0:.10f}".format(neuron.run([0,1])))
+print ("1 0 = {0:.10f}".format(neuron.run([1,0])))
+print ("1 1 = {0:.10f}".format(neuron.run([1,1])))
+
+# OR
+neuron.set_weights([15,15,-10]) #AND
+
+# Challenge: Write your OR weights
+
+print("Gate OR:")
+print ("0 0 = {0:.10f}".format(neuron.run([0,0])))
+print ("0 1 = {0:.10f}".format(neuron.run([0,1])))
+print ("1 0 = {0:.10f}".format(neuron.run([1,0])))
+print ("1 1 = {0:.10f}".format(neuron.run([1,1])))
+
+# NAND
+neuron.set_weights([-10,-10,15]) #AND
+
+# Challenge: Write your OR weights
+
+print("Gate NAND:")
+print ("0 0 = {0:.10f}".format(neuron.run([0,0])))
+print ("0 1 = {0:.10f}".format(neuron.run([0,1])))
+print ("1 0 = {0:.10f}".format(neuron.run([1,0])))
+print ("1 1 = {0:.10f}".format(neuron.run([1,1])))
+
+
+# NOR
+neuron.set_weights([-15,-15,10]) #AND
+
+# Challenge: Write your OR weights
+
+print("Gate NOR:")
 print ("0 0 = {0:.10f}".format(neuron.run([0,0])))
 print ("0 1 = {0:.10f}".format(neuron.run([0,1])))
 print ("1 0 = {0:.10f}".format(neuron.run([1,0])))
